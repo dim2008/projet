@@ -21,4 +21,10 @@ L'objectif est de créer une **application web** complète en utilisant :
 
 ## Mise en place
 
-- 
+---
+
+bash :
+	python -m venv env
+	source env/bin/activate  # Windows : env\Scripts\activate
+	pip install -r requirements.txt
+	python app.py
