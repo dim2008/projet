@@ -38,7 +38,6 @@ input[type="text"] {
   padding: 6px 10px;
   font-size: 14px;
   outline: none;
-  transition: border-color 0.3s ease;
 }
 
 input[type="checkbox"] {
