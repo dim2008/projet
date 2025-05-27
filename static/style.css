@@ -38,14 +38,9 @@ input[type="text"] {
   padding: 6px 10px;
   font-size: 14px;
   width: 250px;
-  border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
   transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus {
-  border-color: #007BFF;
 }
 
 input[type="checkbox"] {
