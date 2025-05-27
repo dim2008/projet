@@ -6,7 +6,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #293133;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   height: 100vh;
   margin: 0;
@@ -38,7 +38,7 @@ input[type="text"] {
   border-radius: 10px;
   margin-bottom: 1rem;
   outline: none;
-  background-color: #5b5e5f;
+  background-color: #434546;
 }
 
 button {
