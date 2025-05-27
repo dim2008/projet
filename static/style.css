@@ -37,7 +37,6 @@ input[type="text"] {
   background-color: #434546;
   padding: 6px 10px;
   font-size: 14px;
-  width: 250px;
   outline: none;
   transition: border-color 0.3s ease;
 }
