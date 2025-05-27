@@ -34,6 +34,7 @@ input[type="text"] {
   width: 90%;
   color: #ffffff;
   margin-bottom: 1rem;
+  border-radius: 5px
   background-color: #434546;
   padding: 6px 10px;
   font-size: 14px;
@@ -44,7 +45,7 @@ input[type="checkbox"] {
   appearance: none;
   width: 18px;
   height: 18px;
-  border: 2px solid #999;
+  border: 0px solid #999;
   border-radius: 4px;
   background-color: white;
   cursor: pointer;
