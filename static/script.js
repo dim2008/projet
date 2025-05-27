@@ -1,10 +1,10 @@
-const checkbox = document.getElementById("tache1");
-    const inputText = document.getElementById("texte1");
+ const checkbox = document.getElementById("tache1");
+    const input = document.getElementById("texte1");
 
-    checkbox.addEventListener("change", function () {
-      if (this.checked) {
-        inputText.classList.add("barre");
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        input.classList.add("input-barre");
       } else {
-        inputText.classList.remove("barre");
+        input.classList.remove("input-barre");
       }
     });
