@@ -64,10 +64,10 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked::after {
   content: '';
   position: absolute;
-  top: 4px;
-  left: 8px;
+  top: 6px;
+  left: 7px;
   width: 6px;
-  height: 12px;
+  height: 10px;
   border: solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
