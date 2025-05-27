@@ -50,11 +50,15 @@ input[type="checkbox"] {
   appearance: none;
   width: 24px;
   height: 24px;
+  border: 2px solid #FFFFFF;
   border-radius: 6px;
   background-color: #293133;
   cursor: pointer;
   position: relative;
   transition: all 0.2s;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
 }
 
 input[type="checkbox"]:checked {
