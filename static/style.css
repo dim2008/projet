@@ -34,11 +34,15 @@ input[type="text"] {
   width: 90%;
   color: #ffffff;
   margin-bottom: 1rem;
-  border-radius: 5px
+  border-radius: 5px;
   background-color: #434546;
   padding: 6px 10px;
   font-size: 14px;
   outline: none;
+}
+
+input[type="text"]:focus {
+  background-color: #434546;
 }
 
 input[type="checkbox"] {
