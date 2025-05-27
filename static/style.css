@@ -33,8 +33,9 @@ h1 {
 input[type="text"] {
   width: 90%;
   color: #ffffff;
+  border: 0px;
   margin-bottom: 1rem;
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: #293133;
   padding: 6px 10px;
   font-size: 14px;
@@ -58,7 +59,6 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
   background-color: #007BFF;
-  border-color: #007BFF;
 }
 
 input[type="checkbox"]:checked::after {
