@@ -23,6 +23,11 @@ body {
   diplay: flex
 }
 
+.strike {
+  text-decoration: line-through;
+  color: gray;
+}
+
 h1 {
   margin-bottom: 1.5rem;
   font-weight: 700;
