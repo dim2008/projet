@@ -36,23 +36,40 @@ function setupCheckboxListeners() {
     document.body.addEventListener('change', function(event) {
         if(event.target && event.target.type === 'checkbox') {
             const checkbox = event.target;
-            // Trouver l'input texte frère dans le même label
             const label = checkbox.parentElement;
             if (!label) return;
-
             const textInput = label.querySelector('input[type="text"]');
             if (!textInput) return;
 
             if (checkbox.checked) {
-                textInput.style.textDecoration = 'line-through';
-                textInput.style.color = '#888'; // optionnel : gris pour barré
+                if (textInput.value.trim() === '') {
+                    // Champ vide : on met le placeholder en rouge
+                    textInput.style.color = 'red';
+                    textInput.placeholder = 'Veuillez entrer une tâche !';
+                    checkbox.checked = false; // Empêcher de cocher si vide
+
+                    // Quand on tape, on remet le style normal et placeholder
+                    textInput.addEventListener('input', function handler() {
+                        if (textInput.value.trim() !== '') {
+                            textInput.style.color = '';
+                            textInput.placeholder = 'Entrez une tâche...';
+                            textInput.removeEventListener('input', handler);
+                        }
+                    });
+                } else {
+                    // Champ rempli : barrer le texte
+                    textInput.style.textDecoration = 'line-through';
+                    textInput.style.color = '#888';
+                }
             } else {
+                // Décoché : enlever le barré et remettre couleur normale si ce n'est pas vide
                 textInput.style.textDecoration = 'none';
-                textInput.style.color = '#fff'; // remettre couleur normale
+                if (textInput.value.trim() !== '') {
+                    textInput.style.color = '#fff';
+                }
             }
         }
     });
 }
 
-// Appeler au chargement de la page
 setupCheckboxListeners();
