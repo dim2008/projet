@@ -31,3 +31,28 @@ function supprimerLigne() {
         alert("Il doit rester au moins une tâche !");
     }
 }
+
+function setupCheckboxListeners() {
+    document.body.addEventListener('change', function(event) {
+        if(event.target && event.target.type === 'checkbox') {
+            const checkbox = event.target;
+            // Trouver l'input texte frère dans le même label
+            const label = checkbox.parentElement;
+            if (!label) return;
+
+            const textInput = label.querySelector('input[type="text"]');
+            if (!textInput) return;
+
+            if (checkbox.checked) {
+                textInput.style.textDecoration = 'line-through';
+                textInput.style.color = '#888'; // optionnel : gris pour barré
+            } else {
+                textInput.style.textDecoration = 'none';
+                textInput.style.color = '#000'; // remettre couleur normale
+            }
+        }
+    });
+}
+
+// Appeler au chargement de la page
+setupCheckboxListeners();
