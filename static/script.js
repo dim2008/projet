@@ -47,7 +47,6 @@ function setupCheckboxListeners() {
             if (checkbox.checked) {
                 if (textInput.value.trim() === '') {
                     // Champ vide : on met le placeholder en rouge
-                    textInput.style.color = 'red';
                     textInput.placeholder = 'Veuillez entrer une tâche !';
                     checkbox.checked = false; // Empêcher de cocher si vide
 
