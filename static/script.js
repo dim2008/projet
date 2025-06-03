@@ -48,7 +48,7 @@ function setupCheckboxListeners() {
                 textInput.style.color = '#888'; // optionnel : gris pour barré
             } else {
                 textInput.style.textDecoration = 'none';
-                textInput.style.color = '#000'; // remettre couleur normale
+                textInput.style.color = '#fff'; // remettre couleur normale
             }
         }
     });
