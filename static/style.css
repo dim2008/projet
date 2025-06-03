@@ -12,22 +12,6 @@ body {
   padding: 20px;
 }
 
-.container {
-  background: #293133;
-  padding: 2.5rem 3rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  text-align: left;
-  max-width: 400px;
-  width: 100%;
-  diplay: flex
-}
-
-.strike {
-  text-decoration: line-through;
-  color: gray;
-}
-
 h1 {
   margin-bottom: 1.5rem;
   font-weight: 700;
@@ -79,25 +63,23 @@ input[type="checkbox"]:checked::after {
 }
 
 button {
-  padding: 0.75rem;
+  width: 3rem;           /* largeur fixe */
+  height: 3rem;          /* hauteur égale à la largeur pour un carré */
   font-size: 1.1rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 8px;    /* coins arrondis */
   background: #f0a500;
   color: #222;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  padding: 0;            /* on enlève le padding car on fixe taille */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 button:hover {
   background: #cf8500;
-}
-
-#response {
-  margin-top: 1.25rem;
-  font-weight: 600;
-  font-size: 1.1rem;
-  min-height: 1.5em;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
